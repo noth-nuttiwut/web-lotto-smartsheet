@@ -1,5 +1,4 @@
 import type { Config } from 'tailwindcss'
-const defaultTheme = require('tailwindcss/defaultTheme')
 
 const config: Config = {
   content: [
@@ -14,13 +13,7 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-    },
-    screens: {
-      'xs': '350px',
-      '3xl': '1920px',
-      ...defaultTheme.screens,
-      
-    },
+    }
   },
   plugins: [require("daisyui")],
   daisyui: {
