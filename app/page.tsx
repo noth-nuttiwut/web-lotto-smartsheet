@@ -1,10 +1,9 @@
 "use client"
-
-import { useMainStore } from '../hooks/useMainStore';
+import useCustomStore from '@/hooks/useCustomStore';
+import { useMainStore } from '@/hooks/useMainStore';
 import AddSetNumbers from "../components/addsetnumbers";
-import UserOrders from '../components/user-orders';
+import UserOrders from '@/components/user-orders';
 import NRow from "../components/nrow";
-import useCustomStore from '../hooks/useCustomStore';
 
 
 export default function Home() {

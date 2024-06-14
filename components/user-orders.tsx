@@ -1,6 +1,6 @@
 "use client"
-import { useMainStore } from "../hooks/useMainStore";
-import useCustomStore from "../hooks/useCustomStore";
+import { useMainStore } from "@/hooks/useMainStore";
+import useCustomStore from "@/hooks/useCustomStore";
 import { useRef } from "react";
 
 

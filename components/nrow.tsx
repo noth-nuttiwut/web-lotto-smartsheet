@@ -1,6 +1,6 @@
 "use client"
-import { Order } from "../model/order"
-import { useMainStore } from "../hooks/useMainStore";
+import { Order } from "@/model/order"
+import { useMainStore } from "@/hooks/useMainStore";
 
 export default function NRow({ rowData, index, removeOrder }: { rowData: Order, index: number , removeOrder : (id : string) => void}) {
     const editOrder = useMainStore( (state) => state.editOrder)

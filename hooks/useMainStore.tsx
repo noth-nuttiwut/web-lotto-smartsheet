@@ -67,8 +67,7 @@ function nPermute(arr: string[]) {
         }
     }
     permutation(arr, arr.length)
-    let newSet = new Set(result);
-    return [...newSet]
+    return [...new Set(result)]
 
 }
 

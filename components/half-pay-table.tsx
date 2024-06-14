@@ -1,6 +1,6 @@
 "use client"
-import useCustomStore from "../hooks/useCustomStore";
-import { useRewardnHPStore } from "../hooks/useRewardStore";
+import useCustomStore from "@/hooks/useCustomStore";
+import { useRewardnHPStore } from "@/hooks/useRewardStore";
 
 
 export default function HalfPayTable() {

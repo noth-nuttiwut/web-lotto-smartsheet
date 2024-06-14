@@ -1,7 +1,7 @@
 "use client"
-import useCustomStore from "../hooks/useCustomStore";
-import { useRewardnHPStore } from "../hooks/useRewardStore";
-import { Rewards } from "../model/rewards";
+import useCustomStore from "@/hooks/useCustomStore";
+import { useRewardnHPStore } from "@/hooks/useRewardStore";
+import { Rewards } from "@/model/rewards";
 
 export default function RewardsTable() {
     const rewards: Rewards = useCustomStore(useRewardnHPStore, (state: any) => state.rewards)
@@ -21,7 +21,7 @@ export default function RewardsTable() {
         "top2Digit"
     ]
     return (
-        <div className="p-10">
+        <div className="p-8">
             <div className="overflow-x-auto">
                 <table className="table table-zebra">
 
