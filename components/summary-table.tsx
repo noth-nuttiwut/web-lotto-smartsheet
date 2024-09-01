@@ -7,7 +7,7 @@ export default function SummaryTable() {
     const total = useCustomStore(useMainStore, (state: any) => state.total)
     const currentAmount = useCustomStore(useMainStore, (state: any) => state.currentAmount)
     const nidProfit = total * 0.2
-    const paiProfit = total - (nidProfit + allWinOrders)
+    const paiProfit = allWinOrders - (total * 0.8)  // > 0 = pay pai, < 0 = pai pay  
     const remainAmount = total - currentAmount
 
     const header_css = "input border text-white border-slate-300 bg-slate-700 w-full max-w-xs text-center text-lg"
@@ -19,7 +19,7 @@ export default function SummaryTable() {
                     <tr className={header_css}>
                         <th className="">ยอดรวมทั้งหมด</th>
                         <th className="">รายได้</th>
-                        <th className="">ยอดที่ต้องจ่ายปาย</th>
+                        <th className=""> { paiProfit < 0 ? "โอนให้ปาย" : "** ปายโอนให้เพิ่ม"}</th>
                         <th className="">ยอดปัจจุบัน</th>
                         <th className="">ค้างชำระ</th>
                         <th className="">ยอดถูกหวย</th>
